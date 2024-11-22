@@ -98,15 +98,10 @@ h2 {
 .skill-item, .interest-item {
     background-color: var(--secondary-color);
     color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 0.3rem 0.3rem;
+    font-size: 1rem;
 }
-
-.education-item, .project-item {
-    margin-bottom: 1.5rem;
-}
-
+ 
 .social-links {
     display: flex;
     justify-content: center;
