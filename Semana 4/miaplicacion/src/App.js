@@ -1,22 +1,27 @@
-import logo from './logo.svg';
+import logo from './images/vegeta.jpg';
+import foto from './images/gokucalvo.jpg';
 import './App.css';
+import Image from './components/image'; // Importa el componente Image correctamente
+
+import Button from './components/button';
 
 function App() {
+  const lanzarAlerta = () => {
+    alert("Has pulsado el botón");
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <p>Hola Soy Goku</p>
+        {/* Pasamos las imágenes al componente */}
+        <Image paramlogo={logo} />
+        <Image paramlogo={foto} />
+        <Button 
+          id={"alerta"} 
+          name={"alerta"}
+          events={()=> {
+            lanzarAlerta();
+          }}/>
       </header>
     </div>
   );
