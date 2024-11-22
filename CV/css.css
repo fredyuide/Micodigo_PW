@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f39c12;
+    --background-color: #f0f4f8;
+    --text-color: #333333;
+    --card-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.card {
+    background-color: var(--card-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.skills-list, .interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+.skill-item, .interest-item {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.education-item, .project-item {
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px 20px 0 0;
+}
